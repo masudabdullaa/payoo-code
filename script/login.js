@@ -14,7 +14,7 @@ document.getElementById("login-btn")
             alert("Login success");
 
             // window.location.replace("/home.html");
-            window.location.assign("/home.html");
+            window.location.assign("./home.html");
         }
         else {
             // 3.2 - if false >> alert > return
