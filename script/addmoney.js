@@ -19,6 +19,19 @@ document.getElementById("add-money-btn").addEventListener("click", function(){
     if(pin == "1234"){
         alert(`Add money success from ${bankAccount}`);
         setBalance(newBalance);
+        // 1 - history-container id ke dhore anbo
+        const history = document.getElementById("history-container");
+
+        // 2 - new div create korbo
+        const newHistory = document.createElement("div");
+        // 3 - new div innerhtml add korbo
+        newHistory.innerHTML = `
+        <div class="transaction-card p-5 bg-base-100">
+        Add money success from ${bankAccount}, account number ${accno}
+            </div>
+        `;
+        // 4 - history container a new dis append korbo
+        history.append(newHistory);
     }else {
         alert("Invalid pin");
         return;
