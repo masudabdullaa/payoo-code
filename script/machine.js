@@ -19,15 +19,16 @@ function setBalance(value){
 }
 // machine id > hide all > show id
 function showOnly(id){
-    console.log("show only function clicked");
     
     const addMoney = document.getElementById("add-money");
     const cashout = document.getElementById("cashout");
     const history = document.getElementById("history");
+    const transferMoney = document.getElementById("transfer-money");
     // step 1 : sob id ke dhore remove kore dissi
     addMoney.classList.add("hidden");
     cashout.classList.add("hidden");
     history.classList.add("hidden");
+    transferMoney.classList.add("hidden");
 
     const selected = document.getElementById(id);
     selected.classList.remove("hidden");
