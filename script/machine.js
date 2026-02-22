@@ -24,11 +24,13 @@ function showOnly(id){
     const cashout = document.getElementById("cashout");
     const history = document.getElementById("history");
     const transferMoney = document.getElementById("transfer-money");
+    const getBonus = document.getElementById("get-bonus");
     // step 1 : sob id ke dhore remove kore dissi
     addMoney.classList.add("hidden");
     cashout.classList.add("hidden");
     history.classList.add("hidden");
     transferMoney.classList.add("hidden");
+    getBonus.classList.add("hidden");
 
     const selected = document.getElementById(id);
     selected.classList.remove("hidden");
